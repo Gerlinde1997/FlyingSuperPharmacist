@@ -5,12 +5,12 @@
 [ext_resource path="res://Sprites/player.png" type="Texture" id=3]
 [ext_resource path="res://FFFFORWA.TTF" type="DynamicFontData" id=4]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 72
 extra_spacing_top = 13
 font_data = ExtResource( 4 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 2, 360 )
 
 [node name="World" type="Node2D"]
@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 54, 112 )
 rect_pivot_offset = Vector2( 27, 56 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.956863, 0.160784, 0.203922, 1 )
 text = "2"
 align = 1
@@ -58,7 +58,7 @@ polygon = PoolVector2Array( -8.79581, -81.9857, 24.8801, -81.9857, 24.9243, -74.
 position = Vector2( -768, -18 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerNode/Player/Resetter"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="WallNode" parent="." instance=ExtResource( 1 )]
 position = Vector2( 272, 570 )
