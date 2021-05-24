@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://WallNode.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/player.png" type="Texture" id=3]
+[ext_resource path="res://FFFFORWA.TTF" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+size = 72
+extra_spacing_top = 13
+font_data = ExtResource( 4 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2, 360 )
+
+[node name="World" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enable = true
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = -27.0
+margin_top = 104.0
+margin_right = 27.0
+margin_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 54, 112 )
+rect_pivot_offset = Vector2( 27, 56 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.956863, 0.160784, 0.203922, 1 )
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerNode" type="Node2D" parent="."]
+position = Vector2( 0, 570 )
+
+[node name="Player" type="KinematicBody2D" parent="PlayerNode"]
+script = ExtResource( 2 )
+
+[node name="CollisionBody" type="CollisionPolygon2D" parent="PlayerNode/Player"]
+polygon = PoolVector2Array( -8, -80, 24, -80, 24, -72, 40, -72, 40, -56, 72, -56, 72, -40, 32, 0, 32, 8, 24, 24, 16, 40, 16, 56, 8, 56, 8, 72, 0, 80, -16, 80, -16, 64, -24, 64, -40, 56, -40, 64, -64, 88, -80, 88, -80, 72, -64, 56, -64, 40, -72, 40, -72, 24, -48, 0, -32, -8, -32, -56, -24, -56, -24, -72, -8, -72 )
+
+[node name="Sprite" type="Sprite" parent="PlayerNode/Player"]
+texture = ExtResource( 3 )
+
+[node name="Detection" type="Area2D" parent="PlayerNode/Player"]
+
+[node name="CollisionBody2" type="CollisionPolygon2D" parent="PlayerNode/Player/Detection"]
+position = Vector2( 0, 1.06067 )
+polygon = PoolVector2Array( -8.79581, -81.9857, 24.8801, -81.9857, 24.9243, -74.0838, 40.6929, -74.0309, 40.9402, -58.0061, 72.9987, -57.9178, 72.9545, -40.4699, 32.5, 0.5, 32.5, 8.5, 24.5, 24.5, 17.0489, 39.9188, 17.0931, 55.9437, 8.87296, 56.1204, 8.91711, 71.5532, 0, 80, -16, 80, -16, 64, -24, 64, -40, 56, -40, 64, -64, 88, -80.8854, 88.0375, -80.8412, 70.7134, -64.6661, 54.5916, -65.55, 40.3793, -73.1072, 40.2468, -72.8509, 22.6046, -48.4645, -2.21503, -33.9069, -9.98459, -33.2882, -58.0414, -25.2891, -58.227, -25.1565, -74.0042, -9.06979, -74.2252 )
+
+[node name="Resetter" type="Area2D" parent="PlayerNode/Player"]
+position = Vector2( -768, -18 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerNode/Player/Resetter"]
+shape = SubResource( 1 )
+
+[node name="WallNode" parent="." instance=ExtResource( 1 )]
+position = Vector2( 272, 570 )
+
+[node name="WallNode2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 920, 472 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 0, 569 )
+current = true
+[connection signal="area_entered" from="PlayerNode/Player/Detection" to="PlayerNode/Player" method="_on_Detection_area_entered"]
+[connection signal="body_entered" from="PlayerNode/Player/Detection" to="PlayerNode/Player" method="_on_Detection_body_entered"]
+[connection signal="body_entered" from="PlayerNode/Player/Resetter" to="PlayerNode/Player" method="_on_Resetter_body_entered"]
