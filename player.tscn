@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/player.png" type="Texture" id=1]
+[ext_resource path="res://player.gd" type="Script" id=2]
+
+[node name="Player" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="PlayerBody" type="KinematicBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="PlayerBody"]
+texture = ExtResource( 1 )
+
+[node name="CollisionBody" type="CollisionPolygon2D" parent="PlayerBody"]
+polygon = PoolVector2Array( 0, -80, 32, -80, 56, -72, 72, -56, 72, -40, 0, 80, -64, 88, -80, 88, -80, 24, -32, -24, -32, -72 )
+
+[node name="Detection" type="Area2D" parent="."]
+
+[node name="CollisionDetect" type="CollisionPolygon2D" parent="Detection"]
+position = Vector2( 2.76908, -1.17055 )
+polygon = PoolVector2Array( 3.73765, -80.8993, 33.593, -81.1293, 58.4903, -71.5941, 73.058, -55.1724, 71.4688, -36.1021, 0.219887, 84.3471, -68.3803, 91.7634, -85.5966, 90.9688, -85.0669, 23.428, -38.7154, -23.7181, -38.4505, -72.8754 )
