@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FlyingSuperPharmasist"
+config/name="FlyingSuperPharmacist"
 config/icon="res://icon.png"
 
 [rendering]
