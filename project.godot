@@ -17,7 +17,11 @@ _global_script_class_icons={
 
 config/name="FlyingSuperPharmacist"
 run/main_scene="res://Flying.tscn"
-config/icon="res://Sprites/player.png"
+config/icon="res://Sprites/man_koala.png"
+
+[autoload]
+
+SceneChanger="*res://Scene_changer.gd"
 
 [display]
 

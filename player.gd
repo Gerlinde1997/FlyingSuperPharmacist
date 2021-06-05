@@ -8,9 +8,11 @@ const GRAVITY = 10
 var motion = Vector2()
 
 var score = 0
+onready var label_score = $"../../GUI/Score"
+onready var end_timer = $"../../End"
 
 func _ready():
-	pass # Replace with function body.
+	pass
 
 func _on_Detection_area_entered(area):
 	if area.name == "PointArea":
@@ -32,4 +34,9 @@ func _physics_process(_delta):
 	motion = move_and_slide(motion, UP)
 
 func _process(_delta):
-	$"../../GUI/Label".text = str(score)
+	label_score.text = str(score)
+
+	if score == 20:
+		end_timer.start(0.5)
+		get_tree().paused = true
+
