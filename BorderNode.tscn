@@ -1,0 +1,137 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/popupbh.png" type="Texture" id=1]
+[ext_resource path="res://Borders.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 512, 8 )
+
+[sub_resource type="SegmentShape2D" id=2]
+b = Vector2( 0, 64 )
+
+[node name="BorderNode" type="Node2D"]
+
+[node name="Borders" type="StaticBody2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Ceiling" type="Sprite" parent="Borders"]
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grond" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond2" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond3" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond4" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond5" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond6" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 1408, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond7" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 1664, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="grond8" type="Sprite" parent="Borders/Ceiling"]
+position = Vector2( 1920, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -98 )
+
+[node name="CollisionCeiling" type="CollisionShape2D" parent="Borders"]
+position = Vector2( 512, 8 )
+shape = SubResource( 1 )
+
+[node name="Ground" type="Sprite" parent="Borders"]
+position = Vector2( 0, 624 )
+scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grond" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 128, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond2" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 384, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond3" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 640, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond4" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 896, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond5" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 1152, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond6" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 1408, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond7" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 1664, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="grond8" type="Sprite" parent="Borders/Ground"]
+position = Vector2( 1920, 0 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 48 )
+flip_h = true
+flip_v = true
+
+[node name="CollisionGround" type="CollisionShape2D" parent="Borders"]
+position = Vector2( 512, 592 )
+shape = SubResource( 1 )
+
+[node name="BordersDetect" type="Area2D" parent="Borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/BordersDetect"]
+shape = SubResource( 2 )

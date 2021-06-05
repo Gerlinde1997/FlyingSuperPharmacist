@@ -50,9 +50,11 @@ polygon = PoolVector2Array( -104, -10, 104, -10, 104, 40, 64, 40, 64, 744, -64, 
 
 [node name="PointArea" type="Area2D" parent="Walls"]
 rotation = 0.610865
+scale = Vector2( 0.75, 0.75 )
+
+[node name="Sprite" type="Sprite" parent="Walls/PointArea"]
+rotation = -2.98023e-08
+texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/PointArea"]
 shape = SubResource( 1 )
-
-[node name="Sprite" type="Sprite" parent="Walls/PointArea"]
-texture = ExtResource( 6 )
