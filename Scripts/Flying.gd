@@ -51,8 +51,8 @@ func _on_Resetter_border_area_entered(area):
 		complete_border.queue_free()
 
 func _on_Start_timeout():
-	label_countdown.visible = false
-	label_score.visible = true
+	label_countdown.hide()
+	label_score.show()
 	get_tree().paused = false
 
 func _on_End_timeout():

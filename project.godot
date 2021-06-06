@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Control",
 "class": "DialogueBox",
 "language": "GDScript",
-"path": "res://DialogueBox.gd"
+"path": "res://Scripts/DialogueBox.gd"
 }, {
 "base": "Node",
 "class": "DialoguePlayer",
 "language": "GDScript",
-"path": "res://DialoguePlayer.gd"
+"path": "res://Scripts/DialoguePlayer.gd"
 } ]
 _global_script_class_icons={
 "DialogueBox": "",
@@ -32,8 +32,8 @@ config/icon="res://Sprites/man_koala.png"
 
 [autoload]
 
-SceneChanger="*res://Scene_changer.gd"
-JsonData="*res://JSONData.gd"
+SceneChanger="*res://Scripts/Scene_changer.gd"
+JsonData="*res://Scripts/JSONData.gd"
 
 [display]
 
