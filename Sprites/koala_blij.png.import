@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/koala_blij.png-d76e1efe1bad0bfba5106eeb271fadc2.stex"
+path="res://.import/Koala_blij.png-9a39f1cce1f40a33f72123ee647e8496.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/koala_blij.png"
-dest_files=[ "res://.import/koala_blij.png-d76e1efe1bad0bfba5106eeb271fadc2.stex" ]
+source_file="res://Sprites/Koala_blij.png"
+dest_files=[ "res://.import/Koala_blij.png-9a39f1cce1f40a33f72123ee647e8496.stex" ]
 
 [params]
 

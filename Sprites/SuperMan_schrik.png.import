@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2021-05-13_13.08.46.png-db1344b82c64f3fc2133c03f3042da01.stex"
+path="res://.import/SuperMan_schrik.png-f436ba2cb1f900aeaf6e1fbdded09e03.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/2021-05-13_13.08.46.png"
-dest_files=[ "res://.import/2021-05-13_13.08.46.png-db1344b82c64f3fc2133c03f3042da01.stex" ]
+source_file="res://Sprites/SuperMan_schrik.png"
+dest_files=[ "res://.import/SuperMan_schrik.png-f436ba2cb1f900aeaf6e1fbdded09e03.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/koala_slaap.png-06ab4f6218a6105d0baedf8fbb6985aa.stex"
+path="res://.import/Koala_slaap.png-230b78e3310abd6c8101fc34b8944b39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/koala_slaap.png"
-dest_files=[ "res://.import/koala_slaap.png-06ab4f6218a6105d0baedf8fbb6985aa.stex" ]
+source_file="res://Sprites/Koala_slaap.png"
+dest_files=[ "res://.import/Koala_slaap.png-230b78e3310abd6c8101fc34b8944b39.stex" ]
 
 [params]
 

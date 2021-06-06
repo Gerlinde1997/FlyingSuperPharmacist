@@ -1,0 +1,5 @@
+{
+    "001": {"name": "Koala", "expression": "empty", "pos": "right", "text": "Ughe... ughe..... snif... ughe....."},
+    "002": {"name": "SuperMan", "expression": "neutraal", "pos": "left", "text": "Hey Koala!"},
+    "003": {"name": "Koala", "expression": "ziek", "pos": "right", "text": "Sniiiiiiiifffff...."}
+}

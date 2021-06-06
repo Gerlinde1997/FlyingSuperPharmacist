@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/koala_ziek.png-b81701748a228f9c31f4d4e2bbbaff6f.stex"
+path="res://.import/Koala_ziek.png-a7b40a802478439ee41f4bc92ff27187.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/koala_ziek.png"
-dest_files=[ "res://.import/koala_ziek.png-b81701748a228f9c31f4d4e2bbbaff6f.stex" ]
+source_file="res://Sprites/Koala_ziek.png"
+dest_files=[ "res://.import/Koala_ziek.png-a7b40a802478439ee41f4bc92ff27187.stex" ]
 
 [params]
 

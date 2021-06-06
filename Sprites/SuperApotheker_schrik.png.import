@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2021-05-13_13.20.21.png-1df9036abd2e0e3b9c4eefae12120d09.stex"
+path="res://.import/SuperApotheker_schrik.png-28858a963aef813408e7aedfe2849838.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/2021-05-13_13.20.21.png"
-dest_files=[ "res://.import/2021-05-13_13.20.21.png-1df9036abd2e0e3b9c4eefae12120d09.stex" ]
+source_file="res://Sprites/SuperApotheker_schrik.png"
+dest_files=[ "res://.import/SuperApotheker_schrik.png-28858a963aef813408e7aedfe2849838.stex" ]
 
 [params]
 
