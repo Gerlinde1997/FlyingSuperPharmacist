@@ -107,5 +107,3 @@ margin_top = 384.0
 margin_right = 368.0
 margin_bottom = 440.0
 text = "start fly"
-[connection signal="pressed" from="Storyline" to="." method="_on_Storyline_pressed"]
-[connection signal="pressed" from="FlyGame" to="." method="_on_FlyGame_pressed"]

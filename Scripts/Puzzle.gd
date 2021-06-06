@@ -1,4 +1,5 @@
 extends Node2D
 
 func _ready():
-	pass
+	if get_tree().paused:
+		get_tree().paused = false

@@ -53,6 +53,7 @@ func update_content():
 	
 	name_label.text = dialogue_player.title
 	text_label.text = dialogue_player.text
+
 	if dialogue_player.portrait_position == "right":
 		$PortraitLeft.modulate = Color(1, 1, 1, 0.75)
 		$PortraitRight.texture = portrait_textures()

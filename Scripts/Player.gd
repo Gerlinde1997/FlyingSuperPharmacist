@@ -8,7 +8,9 @@ const GRAVITY = 10
 var motion = Vector2()
 
 var score = 0
+
 onready var label_score = $"../../GUI/Score"
+onready var label_help = $"../../GUI/Help"
 onready var end_timer = $"../../End"
 
 func _on_Detection_area_entered(area):
@@ -35,6 +37,13 @@ func _process(_delta):
 
 	if GlobalVariables.storymodus:
 		if score == 3:
+			label_help.text = "Je hebt genoeg pillen verzameld!"
+			label_help.show()
+			end_timer.start(2.0)
 			get_tree().paused = true
-			end_timer.start(0.5)
+			
+func _on_End_timeout():
+	var _scene = get_tree().change_scene("res://Puzzle.tscn")
+			
+			
 

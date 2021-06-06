@@ -7,7 +7,6 @@ onready var label_score = $GUI/Score
 onready var label_countdown = $GUI/Countdown
 onready var label_help = $GUI/Help
 
-
 func _ready():
 	var wall_1 = wall.instance()
 	wall_1.position = Vector2(344, 0)
@@ -59,8 +58,3 @@ func _on_Start_timeout():
 	label_help.hide()
 	label_score.show()
 	get_tree().paused = false
-
-func _on_End_timeout():
-	get_tree().paused = false
-	SceneChanger.goto_scene("res://TitleScreen.tscn")
-

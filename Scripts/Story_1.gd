@@ -11,5 +11,5 @@ func _on_DialogueBox_koala_down():
 	$KoalaBed.visible = false
 
 func _on_End_timeout():
-	SceneChanger.goto_scene("res://Flying.tscn")
+	var _scene = get_tree().change_scene_to(load("res://Flying.tscn"))
 	

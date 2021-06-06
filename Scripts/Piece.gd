@@ -6,7 +6,8 @@ signal dragsignal
 var dragsignal
 
 func _ready():
-	dragsignal = connect("dragsignal",self,"_set_drag_pc")
+	dragsignal = connect("dragsignal", self, "_set_drag_pc")
+	var _inputevent = connect("input_event", self, "_on_KinematicBody2D_input_event")
 	
 func _process(_delta):
 	if dragging:
@@ -17,7 +18,7 @@ func _process(_delta):
 		self.modulate = Color(1, 1, 1, 0.5)
 
 func _set_drag_pc():
-	dragging=!dragging
+	dragging = !dragging
 
 func _on_KinematicBody2D_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:

@@ -126,7 +126,7 @@ rect_min_size = Vector2( 54, 112 )
 rect_pivot_offset = Vector2( 27, 56 )
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.956863, 0.160784, 0.203922, 1 )
-text = "verzamel x pillen"
+text = "verzamel 3 pillen"
 align = 1
 valign = 1
 __meta__ = {
@@ -151,4 +151,4 @@ one_shot = true
 [connection signal="area_entered" from="Resetter_wall" to="." method="_on_Resetter_wall_area_entered"]
 [connection signal="area_entered" from="Resetter_border" to="." method="_on_Resetter_border_area_entered"]
 [connection signal="timeout" from="Start" to="." method="_on_Start_timeout"]
-[connection signal="timeout" from="End" to="." method="_on_End_timeout"]
+[connection signal="timeout" from="End" to="PlayerNode/Player" method="_on_End_timeout"]
