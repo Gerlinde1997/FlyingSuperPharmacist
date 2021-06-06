@@ -2,6 +2,7 @@ extends Control
 class_name DialogueBox
 
 signal dialogue_ended
+signal koala_down
 
 onready var dialogue_player = $DialoguePlayer
 
@@ -47,9 +48,16 @@ func portrait_textures():
 		return portrait
 
 func update_content():
+	if dialogue_player.title == "Koala":
+		emit_signal("koala_down")
+	
 	name_label.text = dialogue_player.title
 	text_label.text = dialogue_player.text
 	if dialogue_player.portrait_position == "right":
+		$PortraitLeft.modulate = Color(1, 1, 1, 0.75)
 		$PortraitRight.texture = portrait_textures()
+		$PortraitRight.modulate = Color(1, 1, 1, 1)
 	if dialogue_player.portrait_position == "left":
+		$PortraitRight.modulate = Color(1, 1, 1, 0.75)
 		$PortraitLeft.texture = portrait_textures()
+		$PortraitLeft.modulate = Color(1, 1, 1, 1)

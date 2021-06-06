@@ -10,7 +10,9 @@ func goto_scene(path):
 	
 	call_deferred("_deferred_goto_scene", path)
 
+
 func _deferred_goto_scene(path):
+
 	# remove current scene
 	current_scene.free()
 	

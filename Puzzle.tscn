@@ -1,17 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites/capsule.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Piece.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Puzzle.gd" type="Script" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 32.0
 height = 96.0
 
 [node name="Puzzle" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Piece" type="KinematicBody2D" parent="."]
+position = Vector2( 512, 280 )
 input_pickable = true
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Piece"]
 texture = ExtResource( 1 )

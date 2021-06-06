@@ -5,9 +5,10 @@ var border = preload("res://BorderNode.tscn")
 
 onready var label_score = $GUI/Score
 onready var label_countdown = $GUI/Countdown
+onready var label_help = $GUI/Help
+
 
 func _ready():
-
 	var wall_1 = wall.instance()
 	wall_1.position = Vector2(344, 0)
 	call_deferred("add_child", wall_1)
@@ -23,6 +24,9 @@ func _ready():
 	var wall_4 = wall.instance()
 	wall_4.position = Vector2(1304, rand_range(-142, 142))
 	call_deferred("add_child", wall_4)
+
+	if not GlobalVariables.storymodus:
+		label_help.hide()
 
 	get_tree().paused = true
 
@@ -52,9 +56,11 @@ func _on_Resetter_border_area_entered(area):
 
 func _on_Start_timeout():
 	label_countdown.hide()
+	label_help.hide()
 	label_score.show()
 	get_tree().paused = false
 
 func _on_End_timeout():
 	get_tree().paused = false
-	SceneChanger.goto_scene("res://Puzzle.tscn")
+	SceneChanger.goto_scene("res://TitleScreen.tscn")
+

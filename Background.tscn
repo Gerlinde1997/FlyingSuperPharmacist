@@ -1,0 +1,402 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Forest.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Grass.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprites/flower_dark.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/flower.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/flower_light.png" type="Texture" id=5]
+
+[node name="Background" type="Control"]
+margin_right = 1024.0
+margin_bottom = 600.0
+rect_clip_content = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Canvas" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.941176, 0.996078, 0.678431, 0.545098 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Grass054" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.717647, 0.717647, 0.717647, 0.54902 )
+position = Vector2( 0, 40 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Grass054-2" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.717647, 0.717647, 0.717647, 0.54902 )
+position = Vector2( -8, -112 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Grass090" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.717647, 0.717647, 0.717647, 0.901961 )
+position = Vector2( 0, 191.2 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Forest03-1" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 1, 0.54902 )
+position = Vector2( 48, 40 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Forest03_2" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 1, 0.54902 )
+position = Vector2( 456, 40 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Forest03_3" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 1, 0.54902 )
+position = Vector2( 840, 40 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="FlowerStrip" type="Node2D" parent="."]
+position = Vector2( 0, 191.2 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="flower_dark" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 26.6667, 1.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark2" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 13.3333, 1.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark27" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 856, 0 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark28" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 842.667, 0 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark30" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1042.67, 1.33334 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark29" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1056, 1.33334 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark37" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1349.33, -3.05176e-05 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark38" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1373.33, 3.99997 )
+texture = ExtResource( 3 )
+
+[node name="flower" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 162.667, -3.99997 )
+texture = ExtResource( 4 )
+
+[node name="flower7" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 880, -6.10352e-05 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark3" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 133.333, 1.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark4" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 162.667, 12 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark5" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 189.333, 1.33334 )
+texture = ExtResource( 3 )
+
+[node name="flower4" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 789.333, -3.05176e-05 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark18" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 762.667, 5.33328 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark19" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 789.333, 16 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark20" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 816, 5.33328 )
+texture = ExtResource( 3 )
+
+[node name="flower5" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 922.667, -4 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark21" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 896, 1.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark22" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 922.667, 12 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark23" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 949.333, 1.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower6" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1134.67, 6.66672 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark24" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1092, 6.66675 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark25" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1118.67, 15.9999 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark26" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1161.33, 12 )
+texture = ExtResource( 3 )
+
+[node name="flower8" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1216, 0 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark31" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1189.33, 5.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark32" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1216, 16 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark33" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1242.67, 5.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower9" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1296, 4 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark34" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1266.67, 1.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark35" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1296, 20 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark36" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1322.67, 9.33331 )
+texture = ExtResource( 3 )
+
+[node name="flower2" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 494.667, -3.99997 )
+texture = ExtResource( 4 )
+
+[node name="flower10" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1585.33, -5.3334 )
+texture = ExtResource( 4 )
+
+[node name="flower13" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1400, 1.33331 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark39" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1558.67, -9.15527e-05 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark40" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1585.33, 10.6666 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark41" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1612, -9.15527e-05 )
+texture = ExtResource( 3 )
+
+[node name="flower11" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1665.33, -1.3334 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark42" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1636, -4.00009 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark43" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1665.33, 14.6666 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark44" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 1692, 3.99991 )
+texture = ExtResource( 3 )
+
+[node name="flower12" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 864, -9.33337 )
+texture = ExtResource( 4 )
+
+[node name="flower3" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 666.667, -4 )
+texture = ExtResource( 4 )
+
+[node name="flower_dark13" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 468, 1.33334 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark14" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 494.667, 12 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark15" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 521.333, 1.33334 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark6" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 325.333, 0 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark7" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 312, 0 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark16" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 642.667, 0 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark17" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 629.333, 0 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark8" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 348, -3.99997 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark9" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 374.667, 6.66672 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark10" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 401.333, -3.99997 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark11" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 446.667, 6.66672 )
+texture = ExtResource( 3 )
+
+[node name="flower_dark12" type="Sprite" parent="FlowerStrip"]
+position = Vector2( 433.333, 6.66672 )
+texture = ExtResource( 3 )
+
+[node name="Grassf3" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.717647, 0.717647, 0.717647, 1 )
+position = Vector2( 0, 240 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Grassf" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.717647, 0.717647, 0.717647, 1 )
+position = Vector2( 0, 448 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Grassf2" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.717647, 0.717647, 0.717647, 1 )
+position = Vector2( 0, 344 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Forest06" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 1, 0.843137 )
+position = Vector2( -24, -8 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="Forest06_2" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 1, 1, 0.843137 )
+position = Vector2( 712, -24 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="FlowersRandom" type="Node2D" parent="."]
+position = Vector2( 25.6, 114.4 )
+
+[node name="06" type="Node2D" parent="FlowersRandom"]
+scale = Vector2( 0.6, 0.6 )
+
+[node name="flower_light" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 129.6, 288 )
+texture = ExtResource( 5 )
+
+[node name="flower_light2" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 197.333, 262.667 )
+texture = ExtResource( 5 )
+
+[node name="flower_light3" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 413.333, 265.333 )
+texture = ExtResource( 5 )
+
+[node name="flower_light4" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 784, 329.333 )
+texture = ExtResource( 5 )
+
+[node name="flower_light5" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 1077.33, 236 )
+texture = ExtResource( 5 )
+
+[node name="flower_light6" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 1245.33, 292 )
+texture = ExtResource( 5 )
+
+[node name="flower_light7" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 1197.33, 316 )
+texture = ExtResource( 5 )
+
+[node name="flower_light8" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 816, 222.667 )
+texture = ExtResource( 5 )
+
+[node name="flower_light9" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 1493.33, 272 )
+texture = ExtResource( 5 )
+
+[node name="flower_light10" type="Sprite" parent="FlowersRandom/06"]
+position = Vector2( 1640, 238.667 )
+texture = ExtResource( 5 )
+
+[node name="10" type="Node2D" parent="FlowersRandom"]
+
+[node name="flower_light" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 22.4, 269.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light2" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 44.7998, 253.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light3" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 108.8, 309.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light4" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 192.8, 221.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light5" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 574.4, 285.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light6" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 790.4, 269.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light7" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 348.8, 245.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light8" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 375.2, 269.6 )
+texture = ExtResource( 5 )
+
+[node name="flower_light9" type="Sprite" parent="FlowersRandom/10"]
+position = Vector2( 342.4, 269.6 )
+texture = ExtResource( 5 )

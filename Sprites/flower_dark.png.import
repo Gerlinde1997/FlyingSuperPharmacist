@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/apotheker_schrik.png-32e290306e7bffd43ba01b45970924cf.stex"
+path="res://.import/flower_dark.png-44af1cdae3ea4d209d05c602bfb2edac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/apotheker_schrik.png"
-dest_files=[ "res://.import/apotheker_schrik.png-32e290306e7bffd43ba01b45970924cf.stex" ]
+source_file="res://Sprites/flower_dark.png"
+dest_files=[ "res://.import/flower_dark.png-44af1cdae3ea4d209d05c602bfb2edac.stex" ]
 
 [params]
 

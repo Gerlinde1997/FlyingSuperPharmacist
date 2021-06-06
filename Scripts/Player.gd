@@ -11,9 +11,6 @@ var score = 0
 onready var label_score = $"../../GUI/Score"
 onready var end_timer = $"../../End"
 
-func _ready():
-	pass
-
 func _on_Detection_area_entered(area):
 	if area.name == "PointArea":
 		score += 1
@@ -36,7 +33,8 @@ func _physics_process(_delta):
 func _process(_delta):
 	label_score.text = str(score)
 
-	if score == 20:
-		end_timer.start(0.5)
-		get_tree().paused = true
+	if GlobalVariables.storymodus:
+		if score == 3:
+			get_tree().paused = true
+			end_timer.start(0.5)
 
