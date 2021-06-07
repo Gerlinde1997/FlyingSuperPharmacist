@@ -39,11 +39,11 @@ func _process(_delta):
 		if score == 3:
 			label_help.text = "Je hebt genoeg pillen verzameld!"
 			label_help.show()
-			end_timer.start(2.0)
+			end_timer.start(1.0)
 			get_tree().paused = true
 			
 func _on_End_timeout():
-	# LET OP: paused op false in ready nieuwe scene!
+	# LET OP: tree van nieuwe scene paused = false -> _ready() van nieuwe scene
 	var _scene = get_tree().change_scene("res://Puzzle.tscn")
 			
 			
