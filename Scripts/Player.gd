@@ -43,6 +43,7 @@ func _process(_delta):
 			get_tree().paused = true
 			
 func _on_End_timeout():
+	# LET OP: paused op false in ready nieuwe scene!
 	var _scene = get_tree().change_scene("res://Puzzle.tscn")
 			
 			
