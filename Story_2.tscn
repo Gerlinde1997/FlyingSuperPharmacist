@@ -160,10 +160,10 @@ __meta__ = {
 }
 
 [node name="Next" type="Button" parent="DialogueBox/Panel"]
-margin_left = 351.0
-margin_top = 91.0
-margin_right = 449.0
-margin_bottom = 113.0
+margin_left = 498.202
+margin_top = 100.6
+margin_right = 596.202
+margin_bottom = 122.6
 custom_styles/hover = SubResource( 3 )
 custom_styles/pressed = SubResource( 4 )
 custom_styles/focus = SubResource( 5 )
@@ -180,10 +180,10 @@ __meta__ = {
 }
 
 [node name="End" type="Button" parent="DialogueBox/Panel"]
-margin_left = 503.0
-margin_top = 83.0
-margin_right = 601.0
-margin_bottom = 105.0
+margin_left = 498.202
+margin_top = 100.6
+margin_right = 596.202
+margin_bottom = 122.6
 custom_styles/hover = SubResource( 3 )
 custom_styles/pressed = SubResource( 4 )
 custom_styles/focus = SubResource( 5 )

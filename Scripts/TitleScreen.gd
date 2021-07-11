@@ -5,6 +5,7 @@ var _storyline_connect
 var _instructions_connect
 
 func _ready():
+	get_tree().paused = false
 	_flygame_connect = $FlyGame.connect("pressed", self, "_on_FlyGame_pressed")
 	_storyline_connect = $Storyline.connect("pressed", self, "_on_Storyline_pressed")
 	_instructions_connect = $Instruc.connect("pressed", self, "_on_Instruc_pressed")

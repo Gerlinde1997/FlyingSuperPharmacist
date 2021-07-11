@@ -11,7 +11,14 @@ var score = 0
 
 onready var label_score = $"../../GUI/Score"
 onready var label_help = $"../../GUI/Help"
+onready var label_topscore = $"../../GUI/Topscore"
 onready var end_timer = $"../../End"
+
+func _ready():
+	label_topscore.visible = false
+	if GlobalVariables.storymodus == false:
+		label_topscore.visible = true
+		label_topscore.text = "Topscore: " + str(GlobalVariables.topscore)
 
 func _on_Detection_area_entered(area):
 	if area.name == "PointArea":
@@ -20,6 +27,9 @@ func _on_Detection_area_entered(area):
 
 func _on_Detection_body_entered(body):
 	if body.name == "Walls" or body.name == "Borders":
+		if GlobalVariables.storymodus == false:
+			if GlobalVariables.topscore < score:
+				GlobalVariables.topscore = score
 		var _scene = get_tree().reload_current_scene()
 
 func _physics_process(_delta):
@@ -36,7 +46,7 @@ func _process(_delta):
 	label_score.text = str(score)
 
 	if GlobalVariables.storymodus:
-		if score == 3:
+		if score == 10:
 			label_help.text = "Je hebt genoeg pillen verzameld!"
 			label_help.show()
 			end_timer.start(1.0)

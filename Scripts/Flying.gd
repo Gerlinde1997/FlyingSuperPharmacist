@@ -6,8 +6,16 @@ var border = preload("res://BorderNode.tscn")
 onready var label_score = $GUI/Score
 onready var label_countdown = $GUI/Countdown
 onready var label_help = $GUI/Help
+onready var back_button = $Back
+onready var help_button = $Help
 
 func _ready():
+	if GlobalVariables.storymodus == true:
+		back_button.disabled = true
+		help_button.disabled = true
+		back_button.visible = false
+		help_button.visible = false
+		
 	var wall_1 = wall.instance()
 	wall_1.position = Vector2(344, 0)
 	call_deferred("add_child", wall_1)
@@ -58,3 +66,9 @@ func _on_Start_timeout():
 	label_help.hide()
 	label_score.show()
 	get_tree().paused = false
+
+func _on_Back_pressed():
+	var _scene = get_tree().change_scene_to(load("res://TitleScreen.tscn"))
+
+func _on_Help_pressed():
+	var _scene = get_tree().change_scene_to(load("res://Instructions.tscn"))

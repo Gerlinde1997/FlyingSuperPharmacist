@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	get_tree().paused = false
 	$KoalaBed.visible = true
 
 func _on_DialogueBox_dialogue_ended():
@@ -13,4 +14,5 @@ func _on_DialogueBox_koala_down():
 func _on_End_timeout():
 	GlobalVariables.start_index = 0
 	GlobalVariables.end_index = 10
-	var _scene = get_tree().change_scene_to(load("res://TitleScreen.tscn"))
+	GlobalVariables.storymodus = false
+	var _scene = get_tree().change_scene_to(load("res://End.tscn"))
