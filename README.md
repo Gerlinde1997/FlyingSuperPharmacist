@@ -12,8 +12,8 @@ This game was made as a gift for my ambulant residential counselor.
 
 -----------------------------
 ## Usage
-Download from the release FlyingSuperPharmacist_protbale.zip
-Click on the file with the coloured icon, after unpacking the .zip.
+Download from the release FlyingSuperPharmacist_protbale.zip.  
+Click on the file with the coloured icon, after unpacking the .zip.  
 Pay attention! Keep the .exe and .pck files in the same folder. Otherwise, the game doesn't work.
 
 -----------------------------
