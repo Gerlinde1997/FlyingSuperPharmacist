@@ -5,7 +5,7 @@ Flying Super Pharmacist is a mini game (Dutch) made with Godot Engine.
 
 ------------------------------
 ## Description
-SuperPharmacist collect pills for the sick Koala.
+SuperPharmacist needs to collect pills for the sick Koala.
 
 #### Background
 This game was made as a gift for my ambulant residential counselor. 
