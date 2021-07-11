@@ -12,40 +12,40 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2, 360 )
 
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
 [sub_resource type="StyleBoxEmpty" id=5]
 
 [sub_resource type="StyleBoxEmpty" id=6]
 
-[sub_resource type="StyleBoxEmpty" id=7]
+[sub_resource type="DynamicFont" id=7]
+extra_spacing_top = 13
+font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxEmpty" id=8]
 
 [sub_resource type="StyleBoxEmpty" id=9]
 
-[sub_resource type="DynamicFont" id=10]
-extra_spacing_top = 13
-font_data = ExtResource( 1 )
+[sub_resource type="StyleBoxEmpty" id=10]
 
 [sub_resource type="StyleBoxEmpty" id=11]
 
 [sub_resource type="StyleBoxEmpty" id=12]
 
-[sub_resource type="StyleBoxEmpty" id=13]
-
-[sub_resource type="StyleBoxEmpty" id=14]
-
-[sub_resource type="StyleBoxEmpty" id=15]
-
-[sub_resource type="DynamicFont" id=16]
+[sub_resource type="DynamicFont" id=13]
 extra_spacing_top = 13
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=14]
 size = 36
 extra_spacing_top = 13
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=15]
 size = 48
 extra_spacing_top = 13
 font_data = ExtResource( 1 )
@@ -116,12 +116,12 @@ margin_left = 432.0
 margin_top = -284.0
 margin_right = 492.0
 margin_bottom = -249.0
-custom_styles/hover = SubResource( 5 )
-custom_styles/pressed = SubResource( 6 )
-custom_styles/focus = SubResource( 7 )
-custom_styles/disabled = SubResource( 8 )
-custom_styles/normal = SubResource( 9 )
-custom_fonts/font = SubResource( 10 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.196078, 0.282353, 0.498039, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
@@ -136,12 +136,12 @@ margin_left = 448.0
 margin_top = -256.0
 margin_right = 490.0
 margin_bottom = -221.0
-custom_styles/hover = SubResource( 11 )
-custom_styles/pressed = SubResource( 12 )
-custom_styles/focus = SubResource( 13 )
-custom_styles/disabled = SubResource( 14 )
-custom_styles/normal = SubResource( 15 )
-custom_fonts/font = SubResource( 16 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/disabled = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+custom_fonts/font = SubResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.196078, 0.282353, 0.498039, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
@@ -180,7 +180,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 54, 112 )
 rect_pivot_offset = Vector2( 27, 56 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 14 )
 custom_colors/font_color = Color( 0.196078, 0.282353, 0.498039, 1 )
 text = "Topscore: 0"
 align = 1
@@ -198,7 +198,7 @@ grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 54, 112 )
 rect_pivot_offset = Vector2( 27, 56 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 15 )
 custom_colors/font_color = Color( 0.956863, 0.160784, 0.203922, 1 )
 text = "0"
 align = 1
@@ -218,7 +218,7 @@ rect_min_size = Vector2( 54, 112 )
 rect_pivot_offset = Vector2( 27, 56 )
 custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color = Color( 0.956863, 0.160784, 0.203922, 1 )
-text = "verzamel 10 pillen"
+text = "verzamel 15 pillen"
 align = 1
 valign = 1
 __meta__ = {

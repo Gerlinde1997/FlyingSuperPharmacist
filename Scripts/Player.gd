@@ -46,7 +46,7 @@ func _process(_delta):
 	label_score.text = str(score)
 
 	if GlobalVariables.storymodus:
-		if score == 10:
+		if score == 15:
 			label_help.text = "Je hebt genoeg pillen verzameld!"
 			label_help.show()
 			end_timer.start(1.0)
