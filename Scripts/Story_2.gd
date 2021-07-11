@@ -1,10 +1,13 @@
 extends Node2D
 
+var sprite_koala_sleep = preload("res://Sprites/Koala_slaap.png")
+
 func _ready():
 	get_tree().paused = false
 	$KoalaBed.visible = true
 
 func _on_DialogueBox_dialogue_ended():
+	$KoalaBed.texture = sprite_koala_sleep
 	$KoalaBed.visible = true
 	$End.start(1.0)
 
