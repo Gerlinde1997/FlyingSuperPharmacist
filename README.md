@@ -23,4 +23,4 @@ The inspiration for making this game and the story line comes from my special am
 -----------------------------
 ## License
 GNU General Public License v3.0 or later  
-For more information see COPYING.
+For more information see LICENSE.
