@@ -11,7 +11,6 @@ func _on_DialogueBox_koala_down():
 	$KoalaBed.visible = false
 
 func _on_End_timeout():
-	GlobalVariables.start_index = 10
-	GlobalVariables.end_index = 20
-	var _scene = get_tree().change_scene_to(load("res://Flying.tscn"))
-	
+	GlobalVariables.start_index = 0
+	GlobalVariables.end_index = 10
+	var _scene = get_tree().change_scene_to(load("res://TitleScreen.tscn"))

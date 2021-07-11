@@ -16,14 +16,15 @@ onready var name_label = $Panel/Name
 onready var text_label = $Panel/Text
 
 onready var dialogue_dict = JsonData.dialogue_data
+var start_index = GlobalVariables.start_index
 
 func _ready():
-	start(dialogue_dict)
+	start(dialogue_dict, start_index)
 
-func start(dialogue):
+func start(dialogue, start_ind):
 	button_end.hide()
 	button_next.show()
-	dialogue_player.start(dialogue)
+	dialogue_player.start(dialogue, start_ind)
 	update_content()
 	show()
 

@@ -8,5 +8,15 @@
     "007": {"name": "Koala", "expression": "ziek", "pos": "right", "text": "Ikke, ughe, heb zo'n keelpijn en snotneus, SuperMan."},
     "008": {"name": "SuperMan", "expression": "neutraal", "pos": "left", "text": "Ach, Koala... Wat heb je toch een pech."},
     "009": {"name": "SuperApotheker", "expression": "neutraal", "pos": "left", "text": "Ga jij maar snel weer lekker in bed!"},
-    "010": {"name": "SuperApotheker", "expression": "neutraal", "pos": "left", "text": "Ik regel dit!"}
+    "010": {"name": "SuperApotheker", "expression": "neutraal", "pos": "left", "text": "Ik regel dit!"},
+    "011": {"name": "Koala", "expression": "empty", "pos": "right", "text": "BLABLABLA"},
+    "012": {"name": "SuperMan", "expression": "neutraal", "pos": "left", "text": "Hey Koala!"},
+    "013": {"name": "Koala", "expression": "empty", "pos": "right", "text": "Sniiiiiiiifffff...."},
+    "014": {"name": "Koala", "expression": "ziek", "pos": "right", "text": "Ughe... Pfff.... Hoi, ughe, SuperMan, snif..."},
+    "015": {"name": "SuperMan", "expression": "neutraal", "pos": "left", "text": "Hoi Koala, gaat het wel goed met je?"},
+    "016": {"name": "Koala", "expression": "ziek", "pos": "right", "text": "Sniiiiiiiifffff...."},
+    "017": {"name": "Koala", "expression": "ziek", "pos": "right", "text": "Ikke, ughe, heb zo'n keelpijn en snotneus, SuperMan."},
+    "018": {"name": "SuperMan", "expression": "neutraal", "pos": "left", "text": "Ach, Koala... Wat heb je toch een pech."},
+    "019": {"name": "SuperApotheker", "expression": "neutraal", "pos": "left", "text": "Ga jij maar snel weer lekker in bed!"},
+    "020": {"name": "SuperApotheker", "expression": "neutraal", "pos": "left", "text": "Ik regel dit!"}
 }
